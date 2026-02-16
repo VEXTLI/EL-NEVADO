@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nevado - Paletería y Nevería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-oscuro: #001a7d;
+            --rosa-mexicano: #e6007e;
+            --naranja-cono: #f39200;
+            --azul-claro: #33a1de;
+            --vextli-color: #00A896; /* Color actualizado de Vextli */
+        }
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .logo-container {
+            background: white;
+            border-radius: 50%;
+            padding: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 4px solid white;
+        }
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .btn-link {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .facebook-btn {
+            background-color: white;
+            color: var(--azul-oscuro);
+            border: 2px solid var(--azul-oscuro);
+        }
+        .location-btn {
+            background-color: var(--azul-oscuro);
+            color: white;
+        }
+        .vextli-link {
+            color: var(--vextli-color);
+            font-weight: bold;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .vextli-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6">
+
+    <!-- Encabezado / Logo -->
+    <div class="w-full max-w-md text-center mt-8 mb-10">
+        <div class="logo-container mb-6">
+            <!-- 
+                PARA GITHUB PAGES: 
+                Asegúrate de que el archivo se llame exactamente 'logo.PNG' en tu repositorio.
+            -->
+            <img src="logo.PNG" alt="Logo El Nevado" onerror="this.src='https://via.placeholder.com/180?text=EL+NEVADO'">
+        </div>
+        <h1 class="text-3xl font-bold text-[#001a7d] uppercase tracking-wider">El Nevado</h1>
+        <p class="text-[#e6007e] font-semibold mt-2 tracking-widest uppercase text-sm">Paletería y Nevería</p>
+        <div class="h-1 w-24 bg-[#33a1de] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Contenedor de Enlaces -->
+    <div class="w-full max-w-md space-y-4">
+        
+        <!-- Botón Facebook -->
+        <a href="https://www.facebook.com/share/1GEL2BygWj/?mibextid=wwXIfr" target="_blank" class="btn-link facebook-btn flex items-center justify-between p-4 rounded-xl font-bold text-lg">
+            <span class="flex items-center">
+                <i class="fab fa-facebook text-2xl mr-4"></i>
+                Visítanos en Facebook
+            </span>
+            <i class="fas fa-chevron-right text-sm opacity-50"></i>
+        </a>
+
+        <!-- Botón Ubicación -->
+        <a href="https://maps.app.goo.gl/nc4rcza9dTk2Lgd69?g_st=aw" target="_blank" class="btn-link location-btn flex items-center justify-between p-4 rounded-xl font-bold text-lg shadow-lg">
+            <span class="flex items-center">
+                <i class="fas fa-map-marker-alt text-2xl mr-4 text-[#f39200]"></i>
+                Nueva Ubicación
+            </span>
+            <i class="fas fa-chevron-right text-sm opacity-50"></i>
+        </a>
+
+        <!-- Mensaje de bienvenida -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center mt-8">
+            <h2 class="text-[#001a7d] font-bold mb-2 text-lg">¡Los mejores sabores desde 1990!</h2>
+            <p class="text-gray-600 text-sm">Ven y disfruta de nuestras paletas y nieves.</p>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="mt-auto pt-10 pb-6 text-gray-400 text-xs text-center">
+        <p>&copy; 2026 El Nevado. Todos los derechos reservados.</p>
+        <p class="mt-2 uppercase tracking-widest">
+            Powered by <a href="https://vextli.github.io/VEXTLI/" target="_blank" class="vextli-link">VEXTLI</a>
+        </p>
+    </footer>
+
+</body>
+</html>
